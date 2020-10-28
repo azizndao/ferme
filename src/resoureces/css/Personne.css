@@ -1,0 +1,18 @@
+#personne {
+  -fx-background-color: white;
+  -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.18), 20, 0, 0, 0);
+  -fx-border-radius: 16;
+  -fx-background-radius: 16;
+}
+
+#nom, #email, #telephone, #salaire {
+  -fx-font-weight: bold;
+}
+
+#nom {
+  -fx-font-size: 1.1em;
+}
+
+#salaire {
+  -fx-font-size: 1.5em;
+}

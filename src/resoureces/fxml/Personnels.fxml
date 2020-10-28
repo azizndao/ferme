@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.VBox?>
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      stylesheets="@/css/Personnels.css"
+      fx:controller="com.groupeone.ferme.controllers.PersonnelsController">
+
+  <Label styleClass="h3" text="Les personnels travaillants dans la ferme"/>
+
+  <ScrollPane fitToWidth="true">
+<!--    <FlowPane fx:id="personnels" vgap="50" hgap="50" alignment="CENTER"/>-->
+  </ScrollPane>
+</VBox>
