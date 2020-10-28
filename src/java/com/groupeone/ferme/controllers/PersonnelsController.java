@@ -1,17 +1,15 @@
 package com.groupeone.ferme.controllers;
 
 import com.groupeone.ferme.App;
-import com.groupeone.ferme.customview.PersonneView;
 import com.groupeone.ferme.models.Personnel;
 import com.groupeone.ferme.utils.Res;
 import javafx.fxml.Initializable;
 import javafx.geometry.Rectangle2D;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.layout.AnchorPane;
-import javafx.scene.layout.FlowPane;
-import javafx.scene.layout.VBox;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -21,7 +19,14 @@ import java.util.ResourceBundle;
 public class PersonnelsController implements Initializable {
   private static Stage stage;
   static Rectangle2D screen = App.screen;
-  public FlowPane personnels;
+  public TableView<Personnel> personnels;
+  public TableColumn<Personnel, Integer> id;
+  public TableColumn<Personnel, String> avatar;
+  public TableColumn<Personnel, String> prenom;
+  public TableColumn<Personnel, String> nom;
+  public TableColumn<Personnel, String> email;
+  public TableColumn<Personnel, String> telephone;
+  public TableColumn<Personnel, String> status;
 
   public static void show() throws IOException {
     stage = new Stage();
@@ -35,49 +40,70 @@ public class PersonnelsController implements Initializable {
   @Override
   public void initialize(URL url, ResourceBundle resourceBundle) {
 //    personnels.getChildren().addAll(personnelItems);
+    personnels.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
+    initTableView();
   }
 
-  Node[] personnelItems = {
-      new PersonneView(
-          new Personnel(
-              1, "Aly", "Ka", "/images/personnel-1.png", "aky@ka.th", "aly", "78 092 02 38", "100 000"
-          )
+  private void initTableView() {
+    id.setCellValueFactory(new PropertyValueFactory<>("id"));
+    avatar.setCellValueFactory(new PropertyValueFactory<>("avatar"));
+    prenom.setCellValueFactory(new PropertyValueFactory<>("prenom"));
+    nom.setCellValueFactory(new PropertyValueFactory<>("nom"));
+    email.setCellValueFactory(new PropertyValueFactory<>("email"));
+    telephone.setCellValueFactory(new PropertyValueFactory<>("telephone"));
+    status.setCellValueFactory(new PropertyValueFactory<>("status"));
+    personnels.getItems().addAll(personnelItems);
+  }
+
+  Personnel[] personnelItems = {
+      new Personnel(
+          1, "Aly", "Ka", "/images/personnel-1.png", "aky@ka.th", "aly", "78 092 02 38", "100 000", "Hello World", ""
       ),
-      new PersonneView(
-          new Personnel(
-              1, "Abdou Aziz", "Ndao", "/images/personnel-2.jpg", "abdouaziz@ndao.bk", "aziz", "77 300 99 38", "90 000"
-          )
+      new Personnel(
+          1, "Aly", "Ka", "/images/personnel-1.png", "aky@ka.th", "aly", "78 092 02 38", "100 000", "Hello World", ""
       ),
-      new PersonneView(
-          new Personnel(
-              1, "Aly", "Ka", "/images/personnel-1.png", "aky@ka.th", "aly", "78 092 02 38", "100 000"
-          )
+      new Personnel(
+          1, "Aly", "Ka", "/images/personnel-1.png", "aky@ka.th", "aly", "78 092 02 38", "100 000", "Hello World", ""
       ),
-      new PersonneView(
-          new Personnel(
-              1, "Abdou Aziz", "Ndao", "/images/personnel-2.jpg", "abdouaziz@ndao.bk", "aziz", "77 300 99 38", "90 000"
-          )
+      new Personnel(
+          1, "Aly", "Ka", "/images/personnel-1.png", "aky@ka.th", "aly", "78 092 02 38", "100 000", "Hello World", ""
       ),
-      new PersonneView(
-          new Personnel(
-              1, "Youssonpha", "Sane", "/images/personnel-3.jpg", "youssou@sane.th", "youssou", "70 456 34 65", "105 000"
-          )
+      new Personnel(
+          1, "Aly", "Ka", "/images/personnel-1.png", "aky@ka.th", "aly", "78 092 02 38", "100 000", "Hello World", ""
       ),
-      new PersonneView(
-          new Personnel(
-              1, "Aly", "Ka", "/images/personnel-1.png", "aky@ka.th", "aly", "78 092 02 38", "100 000"
-          )
+      new Personnel(
+          1, "Aly", "Ka", "/images/personnel-1.png", "aky@ka.th", "aly", "78 092 02 38", "100 000", "Hello World", ""
       ),
-      new PersonneView(
-          new Personnel(
-              1, "Abdou Aziz", "Ndao", "/images/personnel-2.jpg", "abdouaziz@ndao.bk", "aziz", "77 300 99 38", "90 000"
-          )
+      new Personnel(
+          1, "Aly", "Ka", "/images/personnel-1.png", "aky@ka.th", "aly", "78 092 02 38", "100 000", "Hello World", ""
       ),
-      new PersonneView(
-          new Personnel(
-              1, "Youssonpha", "Sane", "/images/personnel-3.jpg", "youssou@sane.th", "youssou", "70 456 34 65", "105 000"
-          )
-      )
+      new Personnel(
+          1, "Aly", "Ka", "/images/personnel-1.png", "aky@ka.th", "aly", "78 092 02 38", "100 000", "Hello World", ""
+      ),
+      new Personnel(
+          1, "Aly", "Ka", "/images/personnel-1.png", "aky@ka.th", "aly", "78 092 02 38", "100 000", "Hello World", ""
+      ),
+      new Personnel(
+          1, "Aly", "Ka", "/images/personnel-1.png", "aky@ka.th", "aly", "78 092 02 38", "100 000", "Hello World", ""
+      ),
+      new Personnel(
+          1, "Aly", "Ka", "/images/personnel-1.png", "aky@ka.th", "aly", "78 092 02 38", "100 000", "Hello World", ""
+      ),
+      new Personnel(
+          1, "Aly", "Ka", "/images/personnel-1.png", "aky@ka.th", "aly", "78 092 02 38", "100 000", "Hello World", ""
+      ),
+      new Personnel(
+          1, "Aly", "Ka", "/images/personnel-1.png", "aky@ka.th", "aly", "78 092 02 38", "100 000", "Hello World", ""
+      ),
+      new Personnel(
+          1, "Aly", "Ka", "/images/personnel-1.png", "aky@ka.th", "aly", "78 092 02 38", "100 000", "Hello World", ""
+      ),
+      new Personnel(
+          1, "Aly", "Ka", "/images/personnel-1.png", "aky@ka.th", "aly", "78 092 02 38", "100 000", "Hello World", ""
+      ),
+      new Personnel(
+          1, "Aly", "Ka", "/images/personnel-1.png", "aky@ka.th", "aly", "78 092 02 38", "100 000", "Hello World", ""
+      ),
   };
 
 }

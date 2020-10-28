@@ -6,8 +6,8 @@ public class Personnel extends Personne {
   public Personnel() {
   }
 
-  public Personnel(int id, String prenom, String nom, String image, String email, String password, String telephone, String salaire) {
-    super(id, prenom, nom, image, email, password, telephone);
+  public Personnel(int id, String prenom, String nom, String image, String email, String password, String telephone, String salaire, String avatar, String status) {
+    super(id, prenom, nom, image, email, password, telephone, avatar, status);
     this.salaire = salaire;
   }
 

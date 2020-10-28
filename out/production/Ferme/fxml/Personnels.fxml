@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.FlowPane?>
 <?import javafx.scene.control.ScrollPane?>
-<?import com.groupeone.ferme.customview.PersonneView?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
       stylesheets="@/css/Personnels.css"
@@ -13,6 +13,20 @@
   <Label styleClass="h3" text="Les personnels travaillants dans la ferme"/>
 
   <ScrollPane fitToWidth="true">
-    <FlowPane fx:id="personnels" vgap="50" hgap="50" alignment="CENTER"/>
+    <!--    <FlowPane fx:id="personnels" vgap="50" hgap="50" alignment="CENTER"/>-->
+    <TableView fx:id="personnels">
+      <columns>
+        <TableColumn fx:id="id" text="N" prefWidth="50"/>
+        <TableColumn fx:id="avatar" text="Avatar" prefWidth="50"/>
+        <TableColumn fx:id="prenom" text="Prenom" prefWidth="50"/>
+        <TableColumn fx:id="nom" text="Nom" prefWidth="50"/>
+        <TableColumn fx:id="email" text="Email" prefWidth="50"/>
+        <TableColumn fx:id="telephone" text="Telephone" prefWidth="50"/>
+        <TableColumn fx:id="status" text="Status" prefWidth="50"/>
+      </columns>
+      <columnResizePolicy>
+        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+      </columnResizePolicy>
+    </TableView>
   </ScrollPane>
 </VBox>

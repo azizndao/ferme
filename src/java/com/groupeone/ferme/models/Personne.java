@@ -8,8 +8,10 @@ public class Personne {
   private String password;
   private String image;
   private String telephone;
+  private String avatar;
+  private String status;
 
-  public Personne(int id, String prenom, String nom, String image, String email, String password, String telephone) {
+  public Personne(int id, String prenom, String nom, String image, String email, String password, String telephone, String avatar, String status) {
     this.id = id;
     this.prenom = prenom;
     this.nom = nom;
@@ -17,6 +19,8 @@ public class Personne {
     this.password = password;
     this.telephone = telephone;
     this.image = image;
+    this.avatar = avatar;
+    this.status = status;
   }
 
   public Personne() {
@@ -83,5 +87,21 @@ public class Personne {
   public Personne setTelephone(String telephone) {
     this.telephone = telephone;
     return this;
+  }
+
+  public String getAvatar() {
+    return avatar;
+  }
+
+  public void setAvatar(String avatar) {
+    this.avatar = avatar;
+  }
+
+  public String getStatus() {
+    return status;
+  }
+
+  public void setStatus(String status) {
+    this.status = status;
   }
 }
