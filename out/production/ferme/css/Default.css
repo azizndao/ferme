@@ -1,0 +1,116 @@
+.root {
+  -fx-background-color: white;
+}
+
+.h3 {
+  -fx-font-size: 2.3em;
+  -fx-padding: 25;
+}
+
+.container {
+  -fx-background-color: white;
+}
+
+.radius-4 {
+  -fx-border-radius: 4;
+  -fx-background-radius: 4;
+}
+
+.radius-8 {
+  -fx-border-radius: 8;
+  -fx-background-radius: 8;
+}
+
+.radius-16 {
+  -fx-border-radius: 16;
+  -fx-background-radius: 16;
+}
+
+.radius-24 {
+  -fx-border-radius: 24;
+  -fx-background-radius: 24;
+}
+
+.button {
+  -fx-border-radius: 8;
+  -fx-background-radius: 8;
+}
+
+.field {
+  -fx-pref-height: 35;
+  -fx-pref-width: 512;
+  -fx-background-color: white;
+  -fx-border-color: #00000049;
+}
+
+.field:hover {
+  -fx-border-color: #1689e0;
+  -fx-border-width: 1;
+}
+
+.field:focused {
+  -fx-border-color: #1689e0;
+  -fx-border-width: 2;
+}
+
+.btn {
+  -fx-pref-height: 35;
+  -fx-padding: 0 12;
+  -fx-background-color: white;
+  -fx-min-width: 120;
+  -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.18), 10, 0, 0, 0);
+}
+
+.btn.transparent {
+  -fx-background-color: transparent;
+}
+
+.btn.danger {
+  -fx-background-color: #d60835;
+  -fx-text-fill: white;
+}
+
+.btn.danger.outline {
+  -fx-border-color: #d60835;
+  -fx-background-color: transparent;
+  -fx-text-fill: #d60835;
+}
+
+.btn.danger:hover {
+  -fx-background-color: #ff2150;
+  -fx-text-fill: white;
+}
+
+.btn.danger.outline:hover {
+  -fx-background-color: #ff215024;
+}
+
+.btn.success {
+  -fx-background-color: #6a2ad9;
+  -fx-text-fill: white;
+}
+
+.btn.success:hover {
+  -fx-background-color: #7f34fd;
+}
+
+.btn.success.outline {
+  -fx-border-color: #6a2ad9;
+  -fx-background-color: transparent;
+  -fx-border-width: 1;
+  -fx-wrap-text: #6a2ad9;
+}
+
+.btn.success.outline:hover {
+  -fx-background-color: #7329f824;
+}
+
+.error-message {
+  -fx-border-color: #d60835;
+  -fx-border-radius: 4;
+  -fx-border-width: 1;
+  -fx-padding: 24;
+  -fx-text-fill: #d60835;
+  -fx-pref-width: 512;
+  -fx-background-color: #ff000012;
+}

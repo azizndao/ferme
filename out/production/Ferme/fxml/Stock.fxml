@@ -2,11 +2,18 @@
 
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
       stylesheets="@/css/Personnels.css"
-      prefHeight="500" prefWidth="500"
       fx:controller="com.groupeone.ferme.controllers.StockController">
 
-  <Label text="Page stock"/>
+  <Label text="Le Stock" styleClass="h3"/>
+  <TableView fx:id="tableView" VBox.vgrow="ALWAYS">
+      <TableColumn fx:id="numero"/>
+      <TableColumn fx:id="type"/>
+      <TableColumn fx:id="quantite"/>
+      <TableColumn fx:id="date"/>
+  </TableView>
 </VBox>

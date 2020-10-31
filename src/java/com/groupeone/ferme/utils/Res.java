@@ -1,12 +1,21 @@
 package com.groupeone.ferme.utils;
 
-import com.groupeone.ferme.controllers.AuthController;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
 
 import java.io.IOException;
 
-public class Res {
-  public static <T> T getNode(String name) throws IOException {
-    return FXMLLoader.load(AuthController.class.getResource("/fxml/" + name + ".fxml"));
+/**
+ * Cette classe va nous aidée a éviter dans le code
+ */
+public final class Res {
+  public static <T extends Parent> T getFXML(String name) throws IOException {
+    T parent = FXMLLoader.load(Res.class.getResource("/fxml/" + name + ".fxml"));
+    parent.getStylesheets().add(getCss("Default"));
+    return parent;
+  }
+
+  public static String getCss(String name) {
+    return Res.class.getResource("/css/" + name + ".css").toExternalForm();
   }
 }

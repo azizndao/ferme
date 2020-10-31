@@ -1,12 +1,19 @@
-.h3 {
-  -fx-font-size: 2.3em;
-  -fx-padding: 25;
-}
-
-#personnels {
+#flowPane {
   -fx-background-color: white;
 }
 
 .scroll-pane {
+  -fx-background-color: white;
+}
+
+#filter {
+  -fx-pref-height: 35;
+  -fx-pref-width: 200;
+  -fx-background-color: white;
+  -fx-border-color: #00000049;
+  -fx-border-radius: 2;
+}
+
+.container {
   -fx-background-color: white;
 }

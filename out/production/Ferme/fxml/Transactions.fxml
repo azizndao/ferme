@@ -8,5 +8,5 @@
       prefHeight="500" prefWidth="500"
       fx:controller="com.groupeone.ferme.controllers.TransactionsController">
 
-  <Label text="Page Transactions"/>
+  <Label text="Transactions" styleClass="h3"/>
 </VBox>

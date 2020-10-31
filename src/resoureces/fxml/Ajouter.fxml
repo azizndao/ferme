@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="CENTER" hgap="10" prefWidth="720.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.groupeone.ferme.controllers.AjouterEmployeController">
+
+  <Label style="-fx-font-size: 2.5em;" text="Formulaire d'ajout" GridPane.columnIndex="1" GridPane.columnSpan="3" />
+
+  <Label text="Nom complet" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="1" />
+
+  <TextField fx:id="nomField" maxWidth="512.0" promptText="Nom complet" styleClass="field" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="2" />
+
+  <Label text="Mot de passe" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+  <TextField fx:id="emailField" maxWidth="512.0" promptText="Adresse email" styleClass="field" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="4" />
+
+  <Label text="Numéro de telephone" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="5" />
+
+  <TextField fx:id="telephoneField" maxWidth="512.0" promptText="Telephone" styleClass="field" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="6" />
+
+  <Label text="Mot de passe" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="7" />
+
+  <PasswordField fx:id="passwordField" maxWidth="512.0" promptText="Mot de passe" styleClass="field" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="8" />
+
+  <Label text="Salaire" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="9" />
+
+  <TextField fx:id="salaireField" maxWidth="512.0" promptText="Salaire" styleClass="field" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="10" />
+
+  <Label text="Le status dans la ferme" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="11" />
+
+  <ComboBox fx:id="statusComboBox" maxWidth="512" prefHeight="35" promptText="Veillez selectionner votre status" styleClass="field" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="12" />
+
+  <Label fx:id="errorMessage" styleClass="error-message" text="Error, veillez reessayer" visible="false" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="13" />
+
+  <Button mnemonicParsing="false" text="Supprimer" onAction="#suppimer" styleClass="btn,danger,outline" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+
+  <Button fx:id="annulerButton" onAction="#annuler" styleClass="btn,danger" text="Annuler" GridPane.columnIndex="2" GridPane.rowIndex="14" />
+
+  <Button fx:id="ajouterButton" onAction="#ajouter" styleClass="btn,success" text="Valider" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="14" />
+  <columnConstraints>
+    <ColumnConstraints />
+    <ColumnConstraints />
+    <ColumnConstraints />
+      <ColumnConstraints />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+    <RowConstraints />
+  </rowConstraints>
+  <padding>
+    <Insets bottom="24.0" top="24.0" />
+  </padding>
+</GridPane>

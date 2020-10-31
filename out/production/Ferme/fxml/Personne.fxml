@@ -5,17 +5,20 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-
 <VBox fx:id="personne" alignment="TOP_CENTER"
-      prefHeight="350" prefWidth="250" spacing="10.0" stylesheets="/css/Personne.css"
+      prefWidth="260" spacing="10.0" stylesheets="/css/Personne.css"
       xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1"
       fx:controller="com.groupeone.ferme.controllers.PersonneController">
-  <cursor>
-    <Cursor fx:constant="HAND"/>
-  </cursor>
-  <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="250.0" pickOnBounds="true"/>
-  <Label fx:id="nom" text="Abdou Aziz Ndao"/>
-  <Label fx:id="email" text="azizndao71@gmail.com"/>
-  <Label fx:id="telephone" text="77 622 62 32"/>
-  <Label fx:id="salaire" text="2 000 000 mentuel"/>
+
+  <ImageView fx:id="imageView" fitWidth="260" fitHeight="200" pickOnBounds="true"/>
+  <Label fx:id="nomField"/>
+  <Label fx:id="statusComboBox"/>
+  <Label fx:id="emailField"/>
+  <Label fx:id="telephoneField"/>
+  <Label fx:id="salaireField"/>
+  <Button fx:id="modifier" text="Modifier" onAction="#voirPlus" styleClass="btn,danger,outline">
+    <cursor>
+      <Cursor fx:constant="HAND"/>
+    </cursor>
+  </Button>
 </VBox>

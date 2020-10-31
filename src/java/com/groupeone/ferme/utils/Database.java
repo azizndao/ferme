@@ -10,7 +10,7 @@ public class Database {
 	
 	private Database(String url, String userName, String password) throws SQLException {
 		try {
-			Class.forName("org.mariadb.jdbc.Driver").getConstructor().newInstance();
+			Class.forName("com.mysql.cj.jdbc.Driver").getConstructor().newInstance();
 			connection = DriverManager.getConnection(url, userName, password);
 		} catch (InstantiationException | IllegalAccessException | ClassNotFoundException | NoSuchMethodException | InvocationTargetException e) {
 			e.printStackTrace();
@@ -34,8 +34,7 @@ public class Database {
 		return connection.createStatement();
 	}
 	
-	public PreparedStatement preparedStatement(String query) throws SQLException {
+	public PreparedStatement prepareStatement(String query) throws SQLException {
 		return connection.prepareStatement(query);
 	}
-
 }
