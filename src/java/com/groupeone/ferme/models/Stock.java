@@ -131,14 +131,10 @@ public class Stock {
     });
   }
 
-  public static void delete(Set<Stock> items, Runnable runnable) {
+  public void delete (Runnable runnable) {
     Database.run(() -> {
-      StringJoiner ids = new StringJoiner(",");
-      for (Stock item : items) {
-        ids.add(item.id + "");
-      }
       try (Statement statement = DATABASE.createStatement()) {
-        String sql = String.format("DELETE FROM stocks WHERE id_stock in (%s)", ids);
+        String sql = String.format("DELETE FROM stocks WHERE id_stock = %s", id);
         statement.execute(sql);
       } catch (SQLException e) {
         e.printStackTrace();

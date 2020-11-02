@@ -56,7 +56,6 @@ public class PersonnelsController implements Initializable {
         this.flowPane.getChildren().addAll(personneView);
       });
     }).start();
-
   }
 
   public void ajouterEmployer() throws IOException {

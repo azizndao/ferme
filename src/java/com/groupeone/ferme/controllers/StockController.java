@@ -32,7 +32,7 @@ public class StockController implements Initializable {
   public Button ajouter;
   private final Set<Stock> editingStocks = new HashSet<>();
   private final Set<Stock> newStocks = new HashSet<>();
-  private final Set<Stock> selectedStocks = new HashSet<>();
+  private Stock selectedStock;
 
   @Override
   public void initialize(URL location, ResourceBundle resources) {
@@ -49,7 +49,7 @@ public class StockController implements Initializable {
     gerant.setCellValueFactory(param -> new SimpleStringProperty(param.getValue().getPersonnel().getNom()));
     date.setCellValueFactory(param -> new SimpleStringProperty(Res.getFormattedDate(param.getValue().getDate())));
 
-    tableView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> selectedStocks.add(newValue));
+    tableView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> selectedStock = newValue);
     reload();
   }
 
@@ -58,8 +58,14 @@ public class StockController implements Initializable {
   }
 
   public void validerModifications() {
-    Stock.add(newStocks, this::reload);
-    Stock.update(editingStocks, this::reload);
+    Stock.add(newStocks, () -> {
+      reload();
+      newStocks.clear();
+    });
+    Stock.update(editingStocks, () -> {
+      reload();
+      editingStocks.clear();
+    });
   }
 
   public void ajouter() {
@@ -71,7 +77,11 @@ public class StockController implements Initializable {
   }
 
   public void supprimer() {
-    Stock.delete(selectedStocks, this::reload);
+    if (selectedStock != null)
+      selectedStock.delete(() -> {
+        reload();
+        selectedStock = null;
+      });
   }
 
   public void commitValue(TableColumn.CellEditEvent<Stock, String> editEvent) {

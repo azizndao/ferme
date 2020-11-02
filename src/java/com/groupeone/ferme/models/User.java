@@ -1,6 +1,7 @@
 package com.groupeone.ferme.models;
 
 import com.groupeone.ferme.utils.Database;
+import com.groupeone.ferme.utils.RequestListener;
 import com.groupeone.ferme.utils.Status;
 import javafx.application.Platform;
 
@@ -37,6 +38,31 @@ public class User {
         .setStatus(Status.fromString(result.getString("status")));
   }
 
+  public void login(RequestListener<User> listener) {
+    Database.run(() -> {
+      String sql = "SELECT * FROM users WHERE email=?,password=?,status=?;";
+      try (PreparedStatement stm = Database.getInstance().prepareStatement(sql)) {
+        stm.setString(1, email);
+        stm.setString(2, password);
+        stm.setString(3, status.label);
+        ResultSet resultSet = stm.executeQuery();
+        if (resultSet.next()) {
+          Platform.runLater(() -> {
+            try {
+              listener.onResponse(User.fromResultSet(resultSet));
+            } catch (SQLException throwables) {
+              throwables.printStackTrace();
+              Platform.runLater(() -> listener.onResponse(null));
+            }
+          });
+        } else {
+          Platform.runLater(() -> listener.onResponse(null));
+        }
+      } catch (SQLException throwables) {
+        throwables.printStackTrace();
+      }
+    });
+  }
 
   public static User getUserByEmail(String email) {
     String selectQuery = "SELECT email FROM users WHERE email=?";
@@ -67,11 +93,13 @@ public class User {
   }
 
   public static List<User> getEmployeesWithStatus(Status status) {
-    return getItems("SELECT * FROM users WHERE status != 'Propriétaire' AND status=" + status.label);
+    String sql = String.format("SELECT * FROM users WHERE status != 'Propriétaire' AND status='%s'", status.label);
+    return getItems(sql);
   }
 
   public static List<User> getEmployees() {
-    return getItems("SELECT * FROM users WHERE status != 'Propriétaire'");
+    String sql = "SELECT * FROM users WHERE status != 'Propriétaire'";
+    return getItems(sql);
   }
 
   public void insert(Runnable runnable) {

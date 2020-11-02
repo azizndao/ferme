@@ -1,8 +1,8 @@
 #personne {
   -fx-background-color: white;
   -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.18), 20, 0, 0, 0);
-  -fx-border-radius: 16;
-  -fx-background-radius: 16;
+  -fx-border-radius: 8;
+  -fx-background-radius: 8;
   -fx-padding: 0 0 12 0;
 }
 

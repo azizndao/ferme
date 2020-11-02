@@ -1,11 +1,11 @@
 package com.groupeone.ferme.controllers;
 
 import com.groupeone.ferme.App;
+import com.groupeone.ferme.models.Bovin;
 import com.groupeone.ferme.models.Diagnostic;
 import com.groupeone.ferme.utils.Res;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
@@ -20,26 +20,25 @@ import java.util.ResourceBundle;
 import java.util.Set;
 
 public class SanteController implements Initializable {
+  public VBox pageSante;
+  public TableView<Diagnostic> tableView;
   public TableColumn<Diagnostic, Integer> id;
   public TableColumn<Diagnostic, String> maladie;
   public TableColumn<Diagnostic, String> personnel;
   public TableColumn<Diagnostic, String> description;
-  public TableView<Diagnostic> tableView;
-  public VBox pageSante;
   public TableColumn<Diagnostic, String> animal;
   public TableColumn<Diagnostic, String> date;
   public Button supprimer;
   public Button ajouter;
   public Button valider;
-  private ObservableList<Diagnostic> diagnostics;
-  private final Set<Diagnostic> editingDiagnostics = new HashSet<>();
-  private final Set<Diagnostic> addingDiagnostics = new HashSet<>();
+  private Diagnostic selectedItem;
+  private final Set<Diagnostic> editedDiagnostics = new HashSet<>();
+  private final Set<Diagnostic> newDiagnostics = new HashSet<>();
 
   @Override
   public void initialize(URL url, ResourceBundle resourceBundle) {
-    Diagnostic.getAll(result -> diagnostics = FXCollections.observableArrayList(result));
     pageSante.setPrefHeight(App.screen.getHeight());
-
+    reload();
     personnel.setCellValueFactory(param -> new SimpleStringProperty(param.getValue().getPersonnel().getNom()));
     animal.setCellValueFactory(param -> new SimpleStringProperty(param.getValue().getAnimal().getIdAnimal() + ""));
     date.setCellValueFactory(param -> new SimpleStringProperty(Res.getFormattedDate(param.getValue().getDate())));
@@ -47,26 +46,43 @@ public class SanteController implements Initializable {
     animal.setCellFactory(TextFieldTableCell.forTableColumn());
     description.setCellFactory(TextFieldTableCell.forTableColumn());
     maladie.setCellFactory(TextFieldTableCell.forTableColumn());
-    tableView.setItems(diagnostics);
+    tableView.getSelectionModel().selectedItemProperty().addListener((observable, oldValue, newValue) -> selectedItem = newValue);
+  }
+
+  public void reload() {
+    Diagnostic.getAll(result -> tableView.setItems(FXCollections.observableArrayList(result)));
   }
 
   public void supprimer() {
-
+    if (selectedItem != null) {
+      selectedItem.delete(() -> {
+        selectedItem = null;
+        reload();
+      });
+    }
   }
 
   public void ajouter() {
     Diagnostic diagnostic = new Diagnostic()
         .setDate(LocalDateTime.now())
+        .setAnimal(new Bovin())
         .setPersonnel(AccueilController.user);
-    addingDiagnostics.add(diagnostic);
+    tableView.getItems().add(diagnostic);
+    newDiagnostics.add(diagnostic);
   }
 
   public void enregistrer() {
-      Diagnostic.update(editingDiagnostics, () -> {});
-      Diagnostic.add(addingDiagnostics);
+    Diagnostic.update(editedDiagnostics, () -> {
+      editedDiagnostics.clear();
+      reload();
+    });
+    Diagnostic.add(newDiagnostics, () -> {
+      newDiagnostics.clear();
+      reload();
+    });
   }
 
-  public void valider(TableColumn.CellEditEvent<Diagnostic, String> editEvent) {
+  public void commitChanges(TableColumn.CellEditEvent<Diagnostic, String> editEvent) {
     Diagnostic diagnostic = editEvent.getRowValue();
     String newValue = editEvent.getNewValue();
     String id = editEvent.getTableColumn().getId();
@@ -81,7 +97,6 @@ public class SanteController implements Initializable {
         diagnostic.setDescription(newValue);
         break;
     }
-
-    if (diagnostic.getId() > 0) editingDiagnostics.add(diagnostic);
+    if (diagnostic.getId() > 0) editedDiagnostics.add(diagnostic);
   }
 }

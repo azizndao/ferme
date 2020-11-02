@@ -45,8 +45,12 @@ public class PersonneController implements Initializable {
       if (personnel.getImage() == null) {
         imageView.setImage(new Image("/images/avatar.png", true));
       }else {
-        String url = new File(personnel.getImage()).toURI().toURL().toExternalForm();
-        imageView.setImage(new Image(url, true));
+        if (personnel.getImage().startsWith("/images/")){
+          imageView.setImage(new Image(personnel.getImage(), true));
+        }else {
+          String url = new File(personnel.getImage()).toURI().toURL().toExternalForm();
+          imageView.setImage(new Image(url, true));
+        }
       }
     } catch (MalformedURLException e) {
       e.printStackTrace();

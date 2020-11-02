@@ -10,7 +10,7 @@
   <VBox fx:id="sidebar" alignment="CENTER" prefWidth="325" spacing="8" GridPane.vgrow="ALWAYS">
     <Label fx:id="appName" alignment="CENTER" contentDisplay="CENTER" prefHeight="75" text="Ferme Laitiere"/>
     <Separator prefWidth="200.0"/>
-    <Button styleClass="destination-item, active" text="Personnels">
+    <Button styleClass="destination-item,active" text="Personnels">
       <cursor>
         <Cursor fx:constant="HAND"/>
       </cursor>
@@ -35,7 +35,7 @@
         <Cursor fx:constant="HAND"/>
       </cursor>
     </Button>
-    <Button styleClass="destination-item" text="Stats. vaches">
+    <Button styleClass="destination-item" text="Stats. Animals">
       <cursor>
         <Cursor fx:constant="HAND"/>
       </cursor>

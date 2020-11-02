@@ -10,7 +10,7 @@
       fx:controller="com.groupeone.ferme.controllers.SanteController">
 
   <HBox alignment="CENTER">
-    <Label styleClass="h3" text="La page"/>
+    <Label styleClass="h3" text="La page santé"/>
     <ButtonBar HBox.hgrow="ALWAYS">
       <buttons>
         <Button fx:id="supprimer" mnemonicParsing="false" onAction="#supprimer" styleClass="btn,outline,danger"
@@ -34,19 +34,19 @@
           <PropertyValueFactory property="id"/>
         </cellValueFactory>
       </TableColumn>
-      <TableColumn fx:id="maladie" text="Maladie" onEditCommit="#valider">
+      <TableColumn fx:id="maladie" text="Maladie" onEditCommit="#commitChanges">
         <cellValueFactory>
           <PropertyValueFactory property="maladie"/>
         </cellValueFactory>
       </TableColumn>
-      <TableColumn fx:id="description" text="Description" onEditCommit="#valider">
+      <TableColumn fx:id="description" text="Description" onEditCommit="#commitChanges">
         <cellValueFactory>
           <PropertyValueFactory property="description"/>
         </cellValueFactory>
       </TableColumn>
-      <TableColumn fx:id="animal" onEditCommit="#valider" text="Animal">
+      <TableColumn fx:id="animal" onEditCommit="#commitChanges" text="Animal">
         <cellValueFactory>
-          <PropertyValueFactory property="animal"/>
+          <PropertyValueFactory property="bovin"/>
         </cellValueFactory>
       </TableColumn>
       <TableColumn fx:id="personnel" text="Vétérinaire">
