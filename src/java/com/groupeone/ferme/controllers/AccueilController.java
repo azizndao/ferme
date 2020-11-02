@@ -32,7 +32,7 @@ public class AccueilController implements Initializable {
   public static HBox root;
   public Label appName;
   final List<Button> destinations = new ArrayList<>();
-  private static User user;
+  public static User user;
   static Rectangle2D screen = App.screen;
   public ImageView userImage;
   public Label userEmail;
@@ -117,7 +117,7 @@ public class AccueilController implements Initializable {
             case "Finance":
               currentPage = Res.getFXML("Finances");
               break;
-            case "Stats. vaches":
+            case "Stats. Animals":
               currentPage = Res.getFXML("StatsVaches");
               break;
             default:

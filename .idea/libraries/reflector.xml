@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="reflector">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/reflector.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

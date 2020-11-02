@@ -13,7 +13,7 @@
       <Insets right="24"/>
     </padding>
     <Label styleClass="h3" text="Les employés dans la ferme"/>
-    <ComboBox fx:id="filter"/>
+    <ComboBox fx:id="filter" styleClass="btn,radius-8"/>
     <Button mnemonicParsing="false" fx:id="ajouterEmploye" styleClass="btn,danger,radius-8" text="Ajouter"
             onAction="#ajouterEmployer">
       <cursor>

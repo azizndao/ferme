@@ -1,16 +1,14 @@
 package com.groupeone.ferme;
 
 import com.groupeone.ferme.controllers.AuthController;
-import com.groupeone.ferme.models.UserDao;
 import com.groupeone.ferme.utils.Database;
 import javafx.application.Application;
 import javafx.geometry.Rectangle2D;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
-import me.abdou.reflector.DaoStore;
 
 import java.io.IOException;
-import java.net.UnknownServiceException;
+import java.util.Locale;
 
 /**
  * La classe qui représente notre application
@@ -30,7 +28,8 @@ public class App extends Application {
    */
   @Override
   public void init() throws Exception {
-    Database.connect("jdbc:mysql://localhost/ferme", "abdou", "aziz");
+    Database.connect("jdbc:sqlite:database.sqlite", null, null);
+    Locale.setDefault(Locale.FRANCE);
     super.init();
   }
 

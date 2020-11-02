@@ -84,7 +84,7 @@ public class Animal {
   public enum Sexe {
     MALE("Male"), FEMELLE("Femelle");
 
-    private final String label;
+    public final String label;
 
     Sexe(String label) {
 

@@ -5,17 +5,19 @@
 <?import javafx.scene.control.cell.PropertyValueFactory?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
+<?import javafx.geometry.Insets?>
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
       stylesheets="@/css/Personnels.css"
       prefHeight="500" prefWidth="500"
+      fx:id="pageStats"
       fx:controller="com.groupeone.ferme.controllers.StatsVachesController">
 
   <Label text="Page Stats vaches" styleClass="h3"/>
 
-  <TableView fx:id="tableView">
+  <TableView fx:id="tableView"  VBox.vgrow="ALWAYS">
     <columns>
-      <TableColumn fx:id="id" text="Id">
+      <TableColumn fx:id="id" text="Identifiant">
         <cellValueFactory>
           <PropertyValueFactory property="idAnimal"/>
         </cellValueFactory>

@@ -4,6 +4,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
 
 /**
  * Cette classe va nous aidée a éviter dans le code
@@ -17,5 +18,16 @@ public final class Res {
 
   public static String getCss(String name) {
     return Res.class.getResource("/css/" + name + ".css").toExternalForm();
+  }
+
+  public static String getFormattedDate(LocalDateTime dateTime) {
+    return String.format(
+        "%s/%s/%s à %d:%d",
+        dateTime.getDayOfMonth(),
+        dateTime.getMonth().getValue(),
+        dateTime.getYear(),
+        dateTime.getHour(),
+        dateTime.getMinute()
+    );
   }
 }

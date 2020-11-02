@@ -54,6 +54,6 @@ public class PersonneController implements Initializable {
   }
 
   public void voirPlus() throws IOException {
-    AjouterEmployeController.show(personnel,() -> listener.call());
+    EmployeController.show(personnel,() -> listener.call());
   }
 }

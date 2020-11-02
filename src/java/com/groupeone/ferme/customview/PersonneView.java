@@ -37,8 +37,4 @@ public class PersonneView extends Pane {
   public void setPersonnel(User personnel) {
     controller.setPersonnel(personnel, listener);
   }
-
-  public void setOnFinishAdding() {
-
-  }
 }

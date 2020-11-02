@@ -1,9 +1,15 @@
 package com.groupeone.ferme.models;
 
+import com.groupeone.ferme.utils.Database;
 import com.groupeone.ferme.utils.Status;
+import javafx.application.Platform;
 
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
 
 public class User {
   private int id;
@@ -15,18 +21,13 @@ public class User {
   private Status status;
   private long salaire;
 
-  public User() {
-  }
-
   public int getId() {
     return id;
   }
 
-
   public static User fromResultSet(ResultSet result) throws SQLException {
-    User a = new User();
     return new User()
-        .setId(result.getInt("id"))
+        .setId(result.getInt("id_user"))
         .setNom(result.getString("nom"))
         .setEmail(result.getString("email"))
         .setTelephone(result.getString("telephone"))
@@ -36,6 +37,90 @@ public class User {
         .setStatus(Status.fromString(result.getString("status")));
   }
 
+
+  public static User getUserByEmail(String email) {
+    String selectQuery = "SELECT email FROM users WHERE email=?";
+    User user = null;
+    try (PreparedStatement stm = Database.getInstance().prepareStatement(selectQuery)) {
+      stm.setString(1, email);
+      ResultSet resultSet = stm.executeQuery();
+      if (resultSet.next()) {
+        user = fromResultSet(resultSet);
+      }
+    } catch (SQLException e) {
+      e.printStackTrace();
+    }
+    return user;
+  }
+
+  public static List<User> getItems(String sql) {
+    final List<User> users = new ArrayList<>();
+    try (Statement statement = Database.getInstance().createStatement()) {
+      ResultSet result = statement.executeQuery(sql);
+      while (result.next()) {
+        users.add(User.fromResultSet(result));
+      }
+    } catch (SQLException throwables) {
+      throwables.printStackTrace();
+    }
+    return users;
+  }
+
+  public static List<User> getEmployeesWithStatus(Status status) {
+    return getItems("SELECT * FROM users WHERE status != 'Propriétaire' AND status=" + status.label);
+  }
+
+  public static List<User> getEmployees() {
+    return getItems("SELECT * FROM users WHERE status != 'Propriétaire'");
+  }
+
+  public void insert(Runnable runnable) {
+    Database.run(() -> {
+      try {
+        String query = "INSERT INTO users (nom, email, mot_de_passe, telephone,salaire, status) VALUES (?,?,?,?,?,?)";
+        prepareStatement(query).execute();
+      } catch (SQLException throwables) {
+        throwables.printStackTrace();
+      }
+      Platform.runLater(runnable);
+    });
+  }
+
+  public void update(Runnable runnable) {
+    Database.run(() -> {
+      try {
+        String query = "UPDATE users SET nom=?, email=?, mot_de_passe=?, telephone=?,salaire=?, status=? WHERE id_user=" + id;
+        prepareStatement(query).execute();
+      } catch (SQLException throwables) {
+        throwables.printStackTrace();
+      }
+      Platform.runLater(runnable);
+    });
+  }
+
+  private PreparedStatement prepareStatement(String query) throws SQLException {
+    PreparedStatement stm = Database.getInstance().prepareStatement(query);
+    stm.setString(1, nom);
+    stm.setString(2, email);
+    stm.setString(3, password);
+    stm.setString(4, telephone);
+    stm.setString(5, salaire + "");
+    stm.setString(6, status.label);
+    return stm;
+  }
+
+  public void delete(Runnable runnable) {
+    Database.run(() -> {
+      String deleteQuery = "DELETE FROM users WHERE id_user=?";
+      try (PreparedStatement stm = Database.getInstance().prepareStatement(deleteQuery)) {
+        stm.setInt(1, getId());
+        stm.execute();
+        Platform.runLater(runnable);
+      } catch (SQLException e) {
+        e.printStackTrace();
+      }
+    });
+  }
 
   public User setId(int id) {
     this.id = id;

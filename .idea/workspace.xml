@@ -20,158 +20,140 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="96d1481d-cbdc-48ec-94a6-0a0019ca95a1" name="Default Changelist" comment="Finish with the employees">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/a4d6b233-aa05-4ffd-b928-a0a4ff2a6b91.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/a4d6b233-aa05-4ffd-b928-a0a4ff2a6b91/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ferme.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_mysql_connector_java_8_0_22.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/openjfx_sdk_15_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/reflector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/mysql-connector-java-8.0.22.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/protobuf-java-3.11.4.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/reflector.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Ferme/css/Default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Ferme/fxml/Ajouter.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Ferme/fxml/ChangePassword.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/Ferme/fxml/PersonnelInfo.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/App.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/controllers/AccueilController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/controllers/AjouterEmployeController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/controllers/AuthController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/controllers/ChangePasswordController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/controllers/FinancesController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/controllers/PersonneController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/controllers/PersonnelInfoController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/controllers/PersonnelsController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/controllers/SanteController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/controllers/StatsVachesController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/controllers/StockController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/controllers/TransactionsController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/customview/PersonneView.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/listeners/OnAddFinish.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/models/Animal$Sexe.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/models/Animal.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/models/Boeuf.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/models/Diagnostic.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/models/Stock.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/models/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/models/UserDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/models/Vache$Etat.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/models/Vache.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/utils/Database.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/utils/Res.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/utils/Status.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/utils/StatusConverter.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/css/Default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/css/Personne.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/css/Personnels.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/fxml/Accueil.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/fxml/Ajouter.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/fxml/AuthWindow.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/fxml/ChangePassword.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/fxml/Finances.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/fxml/Personne.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/fxml/PersonnelInfo.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/fxml/Personnels.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/fxml/Sante.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/fxml/StatsVaches.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/fxml/Stock.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/fxml/Transactions.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/images/AvaloniaVS.vsix" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/images/avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/images/personnel-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/images/personnel-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ferme/images/personnel-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/AjouterEmployeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/ChangePasswordController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/listeners/OnAddFinish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/models/Animal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/models/Boeuf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/models/Diagnostic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/models/Stock.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/models/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/models/Vache.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/utils/Status.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/utils/StatusConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resoureces/css/Accueil.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resoureces/css/Default.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resoureces/fxml/Ajouter.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resoureces/fxml/ChangePassword.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/JavaFXApp.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/org_mariadb_jdbc_mariadb_java_client_2_7_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ferme.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Ferme.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/mariadb-java-client-2.7.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/com/groupeone/ferme/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/com/groupeone/ferme/controllers/AuthController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/com/groupeone/ferme/controllers/AuthController$Status.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/com/groupeone/ferme/controllers/AuthController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/com/groupeone/ferme/controllers/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/com/groupeone/ferme/controllers/FinancesController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/com/groupeone/ferme/controllers/PersonneController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/com/groupeone/ferme/controllers/PersonnelsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/com/groupeone/ferme/controllers/ProprietaireController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/com/groupeone/ferme/controllers/SanteController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/com/groupeone/ferme/controllers/StatsVachesController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/com/groupeone/ferme/controllers/StockController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/com/groupeone/ferme/controllers/TransactionsController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/com/groupeone/ferme/customview/PersonneView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/com/groupeone/ferme/models/Personne.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/com/groupeone/ferme/models/Personnel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/com/groupeone/ferme/models/Proprietaire.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/com/groupeone/ferme/utils/Database.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/com/groupeone/ferme/utils/Res.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/css/Auth.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/css/Personne.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ferme/css/Personne.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/css/Personnels.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ferme/css/Personnels.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/css/Proprietaire.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ferme/css/Accueil.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/fxml/AuthWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ferme/fxml/AuthWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/fxml/Personne.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ferme/fxml/Personne.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/fxml/Personnels.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ferme/fxml/Personnels.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/fxml/Proprietaire.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resoureces/fxml/Accueil.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/fxml/Stock.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ferme/fxml/Stock.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ferme/fxml/Transactions.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ferme/fxml/Transactions.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.project" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database.sqlite" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/sqlite-jdbc-3.30.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/models/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/utils/RequestListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/fxml/Employe.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/fxml/Sante.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/fxml/Stock.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/images/animaux-ferme.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a4d6b233-aa05-4ffd-b928-a0a4ff2a6b91.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a4d6b233-aa05-4ffd-b928-a0a4ff2a6b91/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ferme.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_mysql_connector_java_8_0_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/openjfx_sdk_15_0_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/reflector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/reflector.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ferme/css/Accueil.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/css/Accueil.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ferme/css/Default.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/css/Default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ferme/css/Personne.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/css/Personne.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ferme/css/Personnels.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/css/Personnels.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ferme/fxml/Accueil.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ferme/fxml/Ajouter.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ferme/fxml/AuthWindow.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ferme/fxml/ChangePassword.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/fxml/ChangePassword.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ferme/fxml/Finances.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ferme/fxml/Personne.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/fxml/Personne.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ferme/fxml/PersonnelInfo.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ferme/fxml/Personnels.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ferme/fxml/Sante.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ferme/fxml/StatsVaches.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ferme/fxml/Stock.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ferme/fxml/Transactions.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/fxml/Transactions.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ferme/images/AvaloniaVS.vsix" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/images/AvaloniaVS.vsix" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ferme/images/avatar.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/images/avatar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ferme/images/personnel-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/images/personnel-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ferme/images/personnel-2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/images/personnel-2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Ferme/images/personnel-3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/images/personnel-3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/controllers/AccueilController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/controllers/AjouterEmployeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/controllers/AuthController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/controllers/ChangePasswordController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/controllers/FinancesController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/controllers/PersonneController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/controllers/PersonnelInfoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/controllers/PersonnelsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/controllers/SanteController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/controllers/StatsVachesController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/controllers/StockController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/controllers/TransactionsController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/customview/PersonneView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/listeners/OnAddFinish.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/models/Animal$Sexe.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/models/Animal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/models/Boeuf.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/models/Diagnostic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/models/Stock.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/models/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/models/UserDao.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/models/Vache$Etat.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/models/Vache.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/utils/Database.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/utils/Res.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/utils/Status.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/com/groupeone/ferme/utils/StatusConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/css/Accueil.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/css/Default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/css/Personne.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/css/Personnels.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/fxml/Accueil.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/fxml/Ajouter.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/fxml/AuthWindow.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/fxml/ChangePassword.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/fxml/Finances.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/fxml/Finances.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/fxml/Personne.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/fxml/PersonnelInfo.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/fxml/Personnels.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/fxml/Sante.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/fxml/StatsVaches.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/fxml/StatsVaches.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/fxml/Stock.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/fxml/Transactions.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/images/AvaloniaVS.vsix" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/images/avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/images/personnel-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/images/personnel-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ferme/images/personnel-3.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java/com/groupeone/ferme/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/Controller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/AccueilController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/AccueilController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/AjouterEmployeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/EmployeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/ChangePasswordController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/ChangePasswordController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/FinancesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/FinancesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/PersonneController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/PersonneController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/PersonnelsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/PersonnelsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/ProprietaireController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/AccueilController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/SanteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/SanteController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/StatsVachesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/StatsVachesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/StockController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/StockController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/TransactionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/controllers/TransactionsController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java/com/groupeone/ferme/customview/PersonneView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/customview/PersonneView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/com/groupeone/ferme/models/Personne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/com/groupeone/ferme/models/Personnel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/com/groupeone/ferme/models/Proprietaire.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/com/groupeone/ferme/models/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/models/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/com/groupeone/ferme/models/Diagnostic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/models/Diagnostic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/com/groupeone/ferme/models/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/models/Stock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/com/groupeone/ferme/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/models/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/java/com/groupeone/ferme/models/UserDao.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java/com/groupeone/ferme/utils/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/utils/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/java/com/groupeone/ferme/utils/Res.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/groupeone/ferme/utils/Res.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resoureces/css/Auth.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resoureces/css/Personne.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/resoureces/css/Personne.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resoureces/css/Personnels.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/resoureces/css/Personnels.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resoureces/css/Proprietaire.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ferme/css/Accueil.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resoureces/fxml/AuthWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resoureces/fxml/AuthWindow.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resoureces/fxml/Personne.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resoureces/fxml/Personne.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resoureces/fxml/Personnels.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resoureces/fxml/Personnels.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resoureces/fxml/Proprietaire.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Ferme/fxml/Accueil.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resoureces/fxml/Sante.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resoureces/fxml/Sante.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resoureces/fxml/StatsVaches.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resoureces/fxml/StatsVaches.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resoureces/fxml/Stock.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resoureces/fxml/Stock.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resoureces/fxml/Transactions.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resoureces/fxml/Transactions.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resoureces/css/Accueil.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resoureces/css/Default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resoureces/css/Personne.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resoureces/css/Personnels.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resoureces/fxml/Accueil.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/fxml/Accueil.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resoureces/fxml/Ajouter.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resoureces/fxml/AuthWindow.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/fxml/AuthWindow.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resoureces/fxml/ChangePassword.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resoureces/fxml/Finances.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resoureces/fxml/Personne.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resoureces/fxml/Personnels.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/fxml/Personnels.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resoureces/fxml/Sante.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resoureces/fxml/StatsVaches.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resoureces/fxml/Stock.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resoureces/fxml/Transactions.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resoureces/images/AvaloniaVS.vsix" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resoureces/images/avatar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resoureces/images/personnel-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resoureces/images/personnel-2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resoureces/images/personnel-3.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +184,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DatabaseDriversLRU" value="cassandra&#10;mysql" />
+    <property name="DatabaseDriversLRU" value="cassandra&#10;mysql&#10;sqlite" />
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
@@ -211,9 +193,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="database.data.extractors.current.export.id" value="Comma-separated (CSV)_id" />
+    <property name="database.data.extractors.current.export.id" value="SQL-Insert-Multirow.sql.groovy" />
+    <property name="database.data.extractors.current.id" value="SQL-Insert-Multirow.sql.groovy" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/reflector.jar" />
+    <property name="last_opened_file_path" value="$USER_HOME$/sdk/javafx-sdk-15.0.1/lib" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -222,10 +205,11 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -233,35 +217,19 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.groupeone.ferme.utils" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.groupeone.ferme.controllers" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/lib" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.groupeone.ferme.models" />
+      <recent name="com.groupeone.ferme.controllers" />
     </key>
   </component>
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.groupeone.ferme.App" />
       <module name="ferme" />
-      <option name="VM_PARAMETERS" value="--module-path $USER_HOME$/sdk/javafx-sdk-15.0.1/lib --add-modules javafx.fxml,javafx.controls " />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.groupeone.ferme.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="--module-path $USER_HOME$/sdk/javafx-sdk-15.0.1/lib --add-modules javafx.fxml,javafx.controls" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -300,8 +268,27 @@
       <workItem from="1604156391530" duration="516000" />
       <workItem from="1604157011592" duration="11513000" />
       <workItem from="1604182166574" duration="205000" />
-      <workItem from="1604185837758" duration="556000" />
+      <workItem from="1604185837758" duration="6581000" />
+      <workItem from="1604224784470" duration="13176000" />
+      <workItem from="1604241613302" duration="7611000" />
+      <workItem from="1604251052195" duration="800000" />
+      <workItem from="1604285592697" duration="3275000" />
+      <workItem from="1604314056270" duration="366000" />
+      <workItem from="1604316547689" duration="1717000" />
+      <workItem from="1604318803404" duration="2305000" />
+      <workItem from="1604321298450" duration="742000" />
+      <workItem from="1604322668862" duration="861000" />
+      <workItem from="1604323598750" duration="553000" />
+      <workItem from="1604324278579" duration="105000" />
     </task>
+    <task id="LOCAL-00001" summary="Finish with the employees">
+      <created>1604186449339</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604186449340</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,6 +304,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -324,154 +312,25 @@
     <option name="LAST_COMMIT_MESSAGE" value="Finish with the employees" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="503" y="237" width="400" height="290" key="#Configure_Path_Variables" timestamp="1603931452365">
-      <screen x="50" y="27" width="1316" height="741" />
-    </state>
-    <state x="503" y="237" width="400" height="290" key="#Configure_Path_Variables/50.27.1316.741@50.27.1316.741" timestamp="1603931452365" />
-    <state x="166" y="27" width="1024" height="741" key="#Project_Structure" timestamp="1604156864005">
+    <state x="141" y="37" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604324339420">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="166" y="27" width="1024" height="741" key="#Project_Structure/0.27.1366.741@0.27.1366.741" timestamp="1604156864005" />
-    <state x="112" y="251" width="1160" height="299" key="#SQL_Dialects" timestamp="1604159584570">
+    <state x="141" y="37" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741@0.27.1366.741" timestamp="1604324339420" />
+    <state width="1324" height="244" key="GridCell.Tab.0.bottom" timestamp="1604324348255">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="112" y="251" width="1160" height="299" key="#SQL_Dialects/0.27.1366.741@0.27.1366.741" timestamp="1604159584570" />
-    <state x="155" y="27" width="1084" height="741" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604157627039">
+    <state width="1324" height="244" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1604324348255" />
+    <state width="1324" height="244" key="GridCell.Tab.0.center" timestamp="1604324348254">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="155" y="27" width="1084" height="741" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741@0.27.1366.741" timestamp="1604157627039" />
-    <state x="303" y="40" width="800" height="684" key="#com.intellij.execution.impl.EditConfigurationsDialog/50.27.1316.741@50.27.1316.741" timestamp="1603936681687" />
-    <state x="419" y="185" width="517" height="394" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604097690672">
+    <state width="1324" height="244" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1604324348254" />
+    <state width="1324" height="244" key="GridCell.Tab.0.left" timestamp="1604324348252">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="419" y="185" width="517" height="394" key="#com.intellij.fileTypes.FileTypeChooser/0.27.1366.741@0.27.1366.741" timestamp="1604097690672" />
-    <state x="491" y="98" width="473" height="569" key="#com.intellij.ide.util.MemberChooser" timestamp="1604167532633">
+    <state width="1324" height="244" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1604324348252" />
+    <state width="1324" height="244" key="GridCell.Tab.0.right" timestamp="1604324348254">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="491" y="98" width="473" height="569" key="#com.intellij.ide.util.MemberChooser/0.27.1366.741@0.27.1366.741" timestamp="1604167532633" />
-    <state x="465" y="278" width="510" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1604159240726">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="465" y="278" width="510" height="218" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.27.1366.741@0.27.1366.741" timestamp="1604159240726" />
-    <state x="494" y="110" width="368" height="544" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1604163343833">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="494" y="110" width="368" height="544" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.27.1366.741@0.27.1366.741" timestamp="1604163343833" />
-    <state x="416" y="129" width="524" height="506" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604102339702">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="416" y="129" width="524" height="506" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.27.1366.741@0.27.1366.741" timestamp="1604102339702" />
-    <state x="218" y="27" width="920" height="741" key="CommitChangelistDialog2" timestamp="1604186244315">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="218" y="27" width="920" height="741" key="CommitChangelistDialog2/0.27.1366.741@0.27.1366.741" timestamp="1604186244315" />
-    <state x="366" y="137" width="624" height="491" key="DUMP_DIALOG_DIMENSION_KEY" timestamp="1604080910851">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="366" y="137" width="624" height="491" key="DUMP_DIALOG_DIMENSION_KEY/0.27.1366.741@0.27.1366.741" timestamp="1604080910851" />
-    <state x="474" y="264" width="408" height="236" key="DetectedRootsChooserDialog" timestamp="1603974877314">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="474" y="264" width="408" height="236" key="DetectedRootsChooserDialog/0.27.1366.741@0.27.1366.741" timestamp="1603974877314" />
-    <state x="447" y="143" width="600" height="498" key="FileChooserDialogImpl" timestamp="1604185925878">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="447" y="143" width="600" height="498" key="FileChooserDialogImpl/0.27.1366.741@0.27.1366.741" timestamp="1604185925878" />
-    <state x="481" y="143" width="600" height="498" key="FileChooserDialogImpl/50.27.1316.741@50.27.1316.741" timestamp="1603936446880" />
-    <state width="1366" height="272" key="GridCell.Tab.0.bottom" timestamp="1604186251287">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state width="1366" height="272" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1604186251287" />
-    <state width="1316" height="198" key="GridCell.Tab.0.bottom/50.27.1316.741@50.27.1316.741" timestamp="1603937278181" />
-    <state width="1366" height="272" key="GridCell.Tab.0.center" timestamp="1604186251286">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state width="1366" height="272" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1604186251286" />
-    <state width="1316" height="198" key="GridCell.Tab.0.center/50.27.1316.741@50.27.1316.741" timestamp="1603937278180" />
-    <state width="1366" height="272" key="GridCell.Tab.0.left" timestamp="1604186251283">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state width="1366" height="272" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1604186251283" />
-    <state width="1316" height="198" key="GridCell.Tab.0.left/50.27.1316.741@50.27.1316.741" timestamp="1603937278179" />
-    <state width="1366" height="272" key="GridCell.Tab.0.right" timestamp="1604186251287">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state width="1366" height="272" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1604186251287" />
-    <state width="1316" height="198" key="GridCell.Tab.0.right/50.27.1316.741@50.27.1316.741" timestamp="1603937278180" />
-    <state width="1366" height="248" key="GridCell.Tab.1.bottom" timestamp="1604156920985">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state width="1366" height="248" key="GridCell.Tab.1.bottom/0.27.1366.741@0.27.1366.741" timestamp="1604156920985" />
-    <state width="1366" height="248" key="GridCell.Tab.1.center" timestamp="1604156920984">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state width="1366" height="248" key="GridCell.Tab.1.center/0.27.1366.741@0.27.1366.741" timestamp="1604156920984" />
-    <state width="1366" height="248" key="GridCell.Tab.1.left" timestamp="1604156920984">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state width="1366" height="248" key="GridCell.Tab.1.left/0.27.1366.741@0.27.1366.741" timestamp="1604156920984" />
-    <state width="1366" height="248" key="GridCell.Tab.1.right" timestamp="1604156920984">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state width="1366" height="248" key="GridCell.Tab.1.right/0.27.1366.741@0.27.1366.741" timestamp="1604156920984" />
-    <state x="266" y="125" width="824" height="515" key="IDE.errors.dialog" timestamp="1603974624217">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="266" y="125" width="824" height="515" key="IDE.errors.dialog/0.27.1366.741@0.27.1366.741" timestamp="1603974624217" />
-    <state x="501" y="316" width="354" height="133" key="ReplaceDuplicatesPrompt" timestamp="1603994120575">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="501" y="316" width="354" height="133" key="ReplaceDuplicatesPrompt/0.27.1366.741@0.27.1366.741" timestamp="1603994120575" />
-    <state x="153" y="27" width="1024" height="741" key="SettingsEditor" timestamp="1604186393022">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="153" y="27" width="1024" height="741" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1604186393022" />
-    <state x="197" y="27" width="1022" height="737" key="SettingsEditor/50.27.1316.741@50.27.1316.741" timestamp="1603936450910" />
-    <state width="498" height="445" key="SwitcherDM" timestamp="1604168234805">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state width="498" height="445" key="SwitcherDM/0.27.1366.741@0.27.1366.741" timestamp="1604168234805" />
-    <state x="432" y="244" width="542" height="314" key="cloudConfig.PluginsDialog" timestamp="1603925109494">
-      <screen x="50" y="27" width="1316" height="741" />
-    </state>
-    <state x="432" y="244" width="542" height="314" key="cloudConfig.PluginsDialog/50.27.1316.741@50.27.1316.741" timestamp="1603925109494" />
-    <state x="581" y="244" width="244" height="314" key="cloudConfig.SelfSettingsDialog" timestamp="1603925245266">
-      <screen x="50" y="27" width="1316" height="741" />
-    </state>
-    <state x="581" y="244" width="244" height="314" key="cloudConfig.SelfSettingsDialog/50.27.1316.741@50.27.1316.741" timestamp="1603925245266" />
-    <state x="526" y="38" width="303" height="716" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1604162357405">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="526" y="38" width="303" height="716" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.27.1366.741@0.27.1366.741" timestamp="1604162357405" />
-    <state x="474" y="196" width="407" height="383" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1604166951573">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="474" y="196" width="407" height="383" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.27.1366.741@0.27.1366.741" timestamp="1604166951573" />
-    <state x="353" y="98" width="638" height="511" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1604165764833">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="353" y="98" width="638" height="511" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.27.1366.741@0.27.1366.741" timestamp="1604165764833" />
-    <state x="390" y="291" width="553" height="215" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1604157397208">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="390" y="291" width="553" height="215" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.27.1366.741@0.27.1366.741" timestamp="1604157397208" />
-    <state x="426" y="291" width="553" height="215" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/50.27.1316.741@50.27.1316.741" timestamp="1603936408161" />
-    <state x="416" y="130" width="524" height="505" key="extract.method.dialog" timestamp="1604145295802">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="416" y="130" width="524" height="505" key="extract.method.dialog/0.27.1366.741@0.27.1366.741" timestamp="1604145295802" />
-    <state x="476" y="131" width="413" height="503" key="refactoring.ChangeSignatureDialog" timestamp="1604088019094">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="476" y="131" width="413" height="503" key="refactoring.ChangeSignatureDialog/0.27.1366.741@0.27.1366.741" timestamp="1604088019094" />
-    <state x="347" y="165" key="run.anything.popup" timestamp="1604150344702">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="347" y="165" key="run.anything.popup/0.27.1366.741@0.27.1366.741" timestamp="1604150344702" />
-    <state x="333" y="89" width="698" height="678" key="search.everywhere.popup" timestamp="1604182381610">
-      <screen x="0" y="27" width="1366" height="741" />
-    </state>
-    <state x="333" y="89" width="698" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1604182381610" />
-    <state x="371" y="89" width="672" height="678" key="search.everywhere.popup/50.27.1316.741@50.27.1316.741" timestamp="1603937278136" />
+    <state width="1324" height="244" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1604324348254" />
   </component>
 </project>
